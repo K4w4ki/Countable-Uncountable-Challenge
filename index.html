@@ -25,25 +25,26 @@
 </div>
 
 <!-- INTRO -->
-<div class="intro" id="intro">
-  <div class="intro-bg-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
-  <button class="skip-btn" id="skipIntro" type="button">Skip ⏭</button>
+<div class="intro" id="intro" role="dialog" aria-label="Countable & Uncountable — introduction">
+  <div class="intro-grid" aria-hidden="true"></div>
+  <span class="intro-mark">Business English</span>
+  <button class="skip-btn" id="skipIntro" type="button">Skip</button>
+
   <div class="intro-stage">
 
-    <!-- STEP 1: Badge -->
-    <div class="intro-step">
-      <span class="intro-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
-        </svg>
-        Business English
-      </span>
+    <!-- SCENE 1: hook -->
+    <div class="intro-step s-hook">
+      <p class="hook-line">
+        <span class="hook-count rv" aria-hidden="true" style="--d:.3s"><span class="hook-reel"><i>1</i><i>2</i><i>3</i></span></span>
+        <span class="rv" style="--d:.55s">emails.</span>
+      </p>
+      <p class="hook-line hook-line-2"><span class="rv hook-wave" style="--d:2.3s">Some information.</span></p>
+      <p class="hook-note fd" style="--d:3.7s">Some nouns you can count. Others you can’t.</p>
     </div>
 
-    <!-- STEP 2: Logo Corrigido (Mão e Moeda) + Autores -->
-    <div class="intro-step">
-      
-      <div class="intro-brand-icon">
+    <!-- SCENE 2: title -->
+    <div class="intro-step s-title">
+      <div class="intro-logo">
         <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="55 15 405 480"
@@ -99,39 +100,29 @@
     "/>
   </svg>
       </div>
-
-      <div class="author-signature">
-        <div class="author-block">
-          <span class="author-prefix">Created by</span>
-          <span class="author-name">Albert Dias</span>
-        </div>
-        <div class="author-sep">
-          <span class="sep-line"></span>
-          <span class="sep-diamond"></span>
-          <span class="sep-line"></span>
-        </div>
-        <div class="author-block">
-          <span class="author-prefix">Created by</span>
-          <span class="author-name">Sandra Alencar</span>
-        </div>
-      </div>
-
+      <h1 class="intro-title" aria-label="Countable & Uncountable">
+        <span class="t-solid">Countable</span>
+        <span class="t-amp"><i></i><b class="fd" style="--d:1s">&amp;</b><i></i></span>
+        <span class="t-liquid">Uncountable</span>
+      </h1>
+      <p class="intro-sub tk" style="--d:3.4s">Business English Challenge</p>
     </div>
 
-    <!-- STEP 3: Título -->
-    <div class="intro-step">
-      <h1 class="intro-title">
-        <span class="intro-title-line">COUNTABLE</span>
-        <span class="intro-title-amp">&amp;</span>
-        <span class="intro-title-line">UNCOUNTABLE</span>
-      </h1>
-      <div class="intro-tagline">
-        <span></span><span></span><span></span>
+    <!-- SCENE 3: credits -->
+    <div class="intro-step s-credits">
+      <p class="credit-lead tk" style="--d:.2s">Created by</p>
+      <div class="credit-names">
+        <span class="mk"><span class="rv" style="--d:.5s">Albert Dias</span></span>
+        <i aria-hidden="true"></i>
+        <span class="mk"><span class="rv" style="--d:.7s">Sandra Alencar</span></span>
       </div>
-      <div class="intro-tagline-text">Learn · Practice · Challenge</div>
+      <div class="credit-rule" aria-hidden="true"></div>
+      <p class="intro-tagline tk" style="--d:1.7s">Learn · Practice · Challenge</p>
     </div>
 
   </div>
+
+  <div class="intro-progress" aria-hidden="true"><i></i><i></i><i></i></div>
 </div>
 
 <!-- WELCOME -->

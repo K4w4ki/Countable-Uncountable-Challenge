@@ -3,26 +3,62 @@
    APP: navigation, intro sequence, i18n, challenge, classroom
    ========================================================= */
 
-/* ---------- INTRO SEQUENCE (3 steps, like the original) ---------- */
+/* ---------- INTRO SEQUENCE (3 scenes: hook → title → credits → exits on its own) ---------- */
+const INTRO_TIMES=[5400,6600,4600]; // ms de cada cena; ao fim da última a intro sai sozinha
 function runIntro(){
   const steps=[...document.querySelectorAll('.intro-step')];
-  let i=0;
-  function show(n){
-    steps.forEach((s,idx)=>{s.classList.remove('show','hide'); s.classList.add(idx===n?'show':'hide');});
+  const bars=[...document.querySelectorAll('.intro-progress i')];
+  let i=-1, timer=null;
+
+  // título: COUNTABLE vira letras individuais (cada uma sobe de dentro de uma máscara)
+  const solid=document.querySelector('.t-solid');
+  if(solid && !solid.dataset.split){
+    solid.dataset.split='1';
+    solid.innerHTML=[...solid.textContent.trim()].map((c,k)=>'<span class="ch" aria-hidden="true"><span style="--i:'+k+'">'+c+'</span></span>').join('');
   }
+  // logo: cada traço é "desenhado" (stroke-dashoffset)
+  document.querySelectorAll('.intro-logo svg path,.intro-logo svg circle').forEach((el,k)=>{
+    const L=el.getTotalLength?Math.ceil(el.getTotalLength()):0;
+    el.style.strokeDasharray=String(L);
+    el.style.setProperty('--len',L);
+    el.style.setProperty('--dd',(.25+k*.14)+'s');
+  });
+
+  function show(n){
+    const prev=i; i=n;
+    steps.forEach((s,idx)=>{
+      s.classList.remove('show','leave','on');
+      if(idx===n) s.classList.add('show','on');
+      else if(idx===prev) s.classList.add('leave','on');
+    });
+    bars.forEach((b,idx)=>{
+      b.classList.toggle('done',idx<n);
+      b.classList.toggle('on',idx===n);
+      if(idx===n) b.style.setProperty('--dur',(INTRO_TIMES[n]/1000)+'s');
+    });
+    clearTimeout(timer);
+    timer=setTimeout(()=>{ if(n+1<steps.length) show(n+1); else finishIntro(); },INTRO_TIMES[n]);
+  }
+  window._introKeys=e=>{
+    if(e.key==='Escape'){clearTimeout(timer); finishIntro();}
+    else if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){
+      e.preventDefault();
+      clearTimeout(timer);
+      if(i>=steps.length-1) finishIntro(); else show(i+1);
+    }
+  };
+  document.addEventListener('keydown',window._introKeys);
+  document.getElementById('skipIntro').onclick=()=>{clearTimeout(timer); finishIntro();};
   show(0);
-  const timer=setInterval(()=>{
-    i++;
-    if(i>=steps.length){clearInterval(timer); finishIntro(); return;}
-    show(i);
-  },2500);
-  document.getElementById('skipIntro').onclick=()=>{clearInterval(timer); finishIntro();};
 }
 function finishIntro(){
   const intro=document.getElementById('intro');
-  intro.style.transition='opacity .6s ease';
-  intro.style.opacity='0';
-  setTimeout(()=>{intro.style.display='none'; goTo('welcome');},600);
+  if(!intro || intro.dataset.done) return;
+  intro.dataset.done='1';
+  document.removeEventListener('keydown',window._introKeys);
+  intro.classList.add('leaving');
+  goTo('welcome');                       // o menu já aparece por baixo enquanto a intro se dissolve
+  setTimeout(()=>{intro.style.display='none';},1100);
 }
 
 /* ---------- NAVIGATION ---------- */
