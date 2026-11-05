@@ -134,10 +134,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .credit-names{flex-direction:column;gap:6px}
   .credit-names i{display:none}
 }
-@media(prefers-reduced-motion:reduce){
-  .intro,.intro *{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-}
-
 /* ===== SCREENS ===== */
 .screen{display:none;min-height:100svh;padding:30px 16px 60px}
 .screen.active{display:block;animation:viewIn .5s cubic-bezier(.19,1,.22,1)}
