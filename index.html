@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Countable & Uncountable — Business English Challenge</title>
+<meta name="description" content="Practice countable and uncountable nouns in real office English. A free bilingual (EN/PT) business-English game with Learn, Solo Challenge and Classroom Mode.">
+<meta property="og:title" content="Countable & Uncountable — Business English Challenge">
+<meta property="og:description" content="Practice countable and uncountable nouns in real office English. Learn vocabulary, play a solo XP challenge, or run a live Team A vs Team B classroom game.">
+<meta property="og:type" content="website">
+<!-- Favicon SVG temático (Business / Educação) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230F3D2E'/%3E%3Cpath d='M25 70h50M30 70V35l20-12 20 12v35M40 70V55h20v15' fill='none' stroke='%23FFB37A' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- DECORATIVE SCROLLBAR — visually replaces the browser's native scrollbar.
+     Real scrolling still works normally (wheel/keyboard/touch); this bar
+     is not draggable, it just mirrors scroll position with its thumb. -->
+<div class="fake-scrollbar" id="fakeScrollbar" aria-hidden="true">
+  <div class="fake-scrollbar-thumb" id="fakeScrollbarThumb"></div>
+</div>
+
+<!-- INTRO -->
+<div class="intro" id="intro">
+  <div class="intro-bg-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
+  <button class="skip-btn" id="skipIntro" type="button">Skip ⏭</button>
+  <div class="intro-stage">
+
+    <!-- STEP 1: Badge -->
+    <div class="intro-step">
+      <span class="intro-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+        </svg>
+        Business English
+      </span>
+    </div>
+
+    <!-- STEP 2: Logo Corrigido (Mão e Moeda) + Autores -->
+    <div class="intro-step">
+      
+      <div class="intro-brand-icon">
+        <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="55 15 405 480"
+    width="100%"
+    height="100%"
+    fill="none"
+    stroke="#0F3D2E"
+    stroke-width="9.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    aria-label="Mão segurando uma moeda com símbolo de cifrão"
+  >
+    <!-- MOEDA -->
+    <circle cx="256" cy="142" r="116"/>
+    <!-- CIFRÃO -->
+    <path d="M256 71.5V88.5"/>
+    <path d="
+      M296.5 115.5
+      C293.7 98.8 277.7 88.8 256 88.8
+      C233.2 88.8 215.2 100.6 215.2 116.4
+      C215.2 134.2 232.5 140.7 256 146.5
+      C281.3 152.8 296.8 159.7 296.8 177.7
+      C296.8 196.8 279.7 209.8 255.4 209.8
+      C232.6 209.8 215.6 199.3 214.3 182.1
+    "/>
+    <path d="M256 199.8V214.6"/>
+    <!-- PULSO E MANGA -->
+    <path d="M65.8 384.7L91.2 355.8L200.4 459.1L173 486"/>
+    <!-- CONTORNO DA MÃO -->
+    <path d="
+      M102.3 366.2
+      L139.1 327.1
+      C151.2 314.3 165.2 307.9 182.2 307.7
+      L229.3 306.9
+      C241.8 306.7 252.7 312.2 263.5 320.6
+      L303.1 319.5
+      C317.6 319.1 329.8 327.6 334.8 340.5
+      L357.6 328.4
+      L393.5 290.9
+      C405.9 277.9 420.9 273.8 438.1 282.4
+      C444.2 285.5 450.2 289.8 456.2 295
+      L321.9 426.6
+      L191.7 425.1
+      L173.2 444.3
+    "/>
+    <!-- DEDOS E PALMA -->
+    <path d="
+      M244.2 369.4
+      L308.3 368
+      C323 367.7 334 357.2 335.7 342.3
+    "/>
+  </svg>
+      </div>
+
+      <div class="author-signature">
+        <div class="author-block">
+          <span class="author-prefix">Created by</span>
+          <span class="author-name">Albert Dias</span>
+        </div>
+        <div class="author-sep">
+          <span class="sep-line"></span>
+          <span class="sep-diamond"></span>
+          <span class="sep-line"></span>
+        </div>
+        <div class="author-block">
+          <span class="author-prefix">Created by</span>
+          <span class="author-name">Sandra Alencar</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STEP 3: Título -->
+    <div class="intro-step">
+      <h1 class="intro-title">
+        <span class="intro-title-line">COUNTABLE</span>
+        <span class="intro-title-amp">&amp;</span>
+        <span class="intro-title-line">UNCOUNTABLE</span>
+      </h1>
+      <div class="intro-tagline">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="intro-tagline-text">Learn · Practice · Challenge</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- WELCOME -->
+<section id="welcome" class="screen welcome-screen">
+  <div class="welcome-decor"></div>
+  <div class="wrap">
+    <div class="lang-switch" data-lang="en" onclick="toggleLang(this)">
+      <div class="lang-track"><div class="lang-thumb"></div>
+        <button class="lang-opt active" type="button">EN</button><button class="lang-opt" type="button">PT</button>
+      </div>
+    </div>
+    <div class="hero">
+      <span class="eyebrow">🏢 Business English</span>
+      <h1 class="i18n" data-en="How much? How many?" data-pt="How much? How many?">How much? How many?</h1>
+      <p class="i18n" data-en="Master countable &amp; uncountable nouns in real office situations." data-pt="Domine substantivos contáveis e incontáveis em situações reais de escritório.">Master countable &amp; uncountable nouns in real office situations.</p>
+    </div>
+    <div class="card-grid">
+      <div class="choice-card" onclick="goTo('learn')">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3 class="i18n" data-en="Learn" data-pt="Aprender">Learn</h3><p class="i18n" data-en="Office vocabulary — what's countable, what's not." data-pt="Vocabulário de escritório — o que é contável e o que não é.">Office vocabulary.</p>
+      </div>
+      <div class="choice-card" onclick="goTo('challengeIntro')">
+        <div class="icon-circle orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+        <h3 class="i18n" data-en="Challenge" data-pt="Desafio">Challenge</h3><p class="i18n" data-en="Answer solo, earn XP, unlock badges." data-pt="Responda sozinho, ganhe XP, desbloqueie conquistas.">Earn XP solo.</p>
+      </div>
+      <div class="choice-card" onclick="goTo('classroomSetup')">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 class="i18n" data-en="Classroom Mode" data-pt="Modo Sala de Aula">Classroom Mode</h3><p class="i18n" data-en="Team A vs Team B — live in front of the class." data-pt="Equipe A vs Equipe B — ao vivo, na frente da turma.">Team A vs Team B.</p>
+      </div>
+    </div>
+    <div class="stats-row">
+      <span class="stat-pill">📚 16 WORDS</span>
+      <span class="stat-pill">❓ 15 QUESTIONS</span>
+      <span class="stat-pill">👥 2 TEAM MODE</span>
+    </div>
+    <div class="welcome-footer">
+      <b>Business English</b> · created by <b>Albert Dias</b> &amp; <b>Sandra Alencar</b>
+    </div>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section id="learn" class="screen learn-screen">
+  <div class="wrap">
+
+    <div class="learn-header">
+      <div class="learn-header-top">
+        <span class="learn-eyebrow i18n" data-en="📖 Office Glossary" data-pt="📖 Glossário de Escritório">📖 Office Glossary</span>
+        <div class="lang-switch inline" data-lang="en" onclick="toggleLang(this)">
+          <div class="lang-track"><div class="lang-thumb"></div><button class="lang-opt active" type="button">EN</button><button class="lang-opt" type="button">PT</button></div>
+        </div>
+      </div>
+      <h2 class="learn-title i18n" data-en="Countable &amp; Uncountable Nouns" data-pt="Substantivos Contáveis e Incontáveis">Countable &amp; Uncountable Nouns</h2>
+      <p class="learn-subtitle i18n" data-en="The 16 office terms every professional should know how to quantify correctly — with real business examples." data-pt="Os 16 termos de escritório que todo profissional precisa saber quantificar corretamente — com exemplos reais de negócios.">The 16 office terms every professional should know how to quantify correctly — with real business examples.</p>
+
+      <div class="learn-rules">
+        <div class="rule-card rule-c">
+          <span class="rule-tag" aria-hidden="true">C</span>
+          <div>
+            <h4 class="i18n" data-en="Countable" data-pt="Contável">Countable</h4>
+            <p class="i18n" data-en="Has a plural form — one email, two emails." data-pt="Tem forma plural — one email, two emails.">Has a plural form — one email, two emails.</p>
+          </div>
+        </div>
+        <div class="rule-card rule-u">
+          <span class="rule-tag" aria-hidden="true">U</span>
+          <div>
+            <h4 class="i18n" data-en="Uncountable" data-pt="Incontável">Uncountable</h4>
+            <p class="i18n" data-en="No plural — information, never 'informations'." data-pt="Sem plural — information, nunca 'informations'.">No plural — information, never 'informations'.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="learn-toolbar">
+      <div class="learn-filters" id="learnFilters" role="group" aria-label="Filter vocabulary by type">
+        <button class="filter-chip active" type="button" data-filter="all" onclick="setVocabFilter('all')">
+          <span class="i18n" data-en="All" data-pt="Todas">All</span> <span class="count" id="countAll"></span>
+        </button>
+        <button class="filter-chip" type="button" data-filter="C" onclick="setVocabFilter('C')">
+          <span class="i18n" data-en="Countable" data-pt="Contáveis">Countable</span> <span class="count" id="countC"></span>
+        </button>
+        <button class="filter-chip" type="button" data-filter="U" onclick="setVocabFilter('U')">
+          <span class="i18n" data-en="Uncountable" data-pt="Incontáveis">Uncountable</span> <span class="count" id="countU"></span>
+        </button>
+      </div>
+      <label class="learn-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span class="sr-only i18n" data-en="Search a word" data-pt="Buscar uma palavra">Search a word</span>
+        <input type="text" id="vocabSearch" placeholder="Search a word…" oninput="renderVocab()">
+      </label>
+    </div>
+
+    <div class="vocab-grid" id="vocabGrid"></div>
+    <div class="nav-row"><button class="btn btn-ghost" onclick="goTo('welcome')" type="button">← Back</button></div>
+  </div>
+</section>
+
+<!-- CHALLENGE INTRO -->
+<section id="challengeIntro" class="screen">
+  <div class="wrap center" style="padding-top:60px">
+    <div class="lang-switch" data-lang="en" onclick="toggleLang(this)"><div class="lang-track"><div class="lang-thumb"></div><button class="lang-opt active" type="button">EN</button><button class="lang-opt" type="button">PT</button></div></div>
+    <div class="intro-logo-mark" style="margin:0 auto;animation:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+    <h1 class="i18n mt" data-en="The Quantity Challenge" data-pt="O Desafio das Quantidades">The Quantity Challenge</h1>
+    <p class="i18n" style="color:var(--ink-500);margin-top:10px" data-en="15 questions. Answer fast, build combos, earn XP and badges." data-pt="15 perguntas. Responda rápido, construa combos, ganhe XP e conquistas.">15 questions.</p>
+    
+    <div class="challenge-actions mt">
+      <button class="btn btn-primary btn-icon-left" onclick="startChallenge()" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Start Challenge
+      </button>
+      <button class="btn btn-ghost btn-icon-left" onclick="goTo('welcome')" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Exit
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE -->
+<section id="challenge" class="screen">
+  <div class="wrap">
+    <!-- Barra superior: Apenas o botão de Exit alinhado à direita -->
+    <div class="challenge-top-bar">
+      <button class="btn btn-ghost btn-icon-left" onclick="exitChallenge()" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Exit Challenge
+      </button>
+    </div>
+    
+    <div class="center"><span class="phase-badge" id="phaseBadge">📍 PHASE 1 · SPOT THE TYPE</span></div>
+    <div class="stepper" id="stepper"></div>
+    <div class="stats-bar">
+      <div class="stat-pill">⭐ LEVEL <span id="lvl">1</span></div>
+      <div class="stat-pill">✨ XP <span id="xpVal">0</span></div>
+      <div class="stat-pill">🔥 COMBO <span id="comboVal">0</span></div>
+    </div>
+    <div class="xp-bar"><div class="xp-fill" id="xpFill"></div></div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+    <div class="question-card">
+      <div class="q-toolbar">
+        <button class="pill-btn" id="hintBtn" onclick="toggleHint()" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 2z"/></svg> HINT</button>
+        <button class="pill-btn" id="qLangBtn" onclick="toggleQuestionLang()" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg> PT</button>
+      </div>
+      <div class="q-progress">Question <span id="qNum">1</span> / 15</div>
+      <div class="q-text" id="qText"></div>
+      <div class="options-grid" id="optGrid"></div>
+      <div class="hint-box" id="hintBox" aria-live="polite"></div>
+      <div class="feedback-box" id="feedback" aria-live="polite"></div>
+    </div>
+    <div class="nav-row"><button class="btn btn-primary" id="nextBtn" style="display:none" onclick="nextQuestion()" type="button">Next →</button></div>
+  </div>
+  <div class="combo-toast" id="comboToast"></div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="screen">
+  <div class="wrap center" style="padding-top:50px">
+    <div class="rank-box">
+      <div class="confetti" id="confetti"></div>
+      <div class="icon-circle orange" style="margin:0 auto 10px" id="rankIconWrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M7 5H4a3 3 0 0 0 3 5M17 5h3a3 3 0 0 1-3 5"/></svg></div>
+      <h2 id="rankTitle">CEO Material</h2>
+      <p id="rankDesc" style="color:var(--ink-500);margin-top:8px"></p>
+      <div class="accuracy-wrap">
+        <div class="accuracy-track"><div class="accuracy-fill" id="accFill"></div></div>
+        <div class="accuracy-label" id="accLabel">0% ACCURACY</div>
+      </div>
+      <div class="stat-mini-row">
+        <div class="stat-mini"><div class="v" id="finalXp">0</div><div class="l">TOTAL XP</div></div>
+        <div class="stat-mini"><div class="v" id="finalCombo">0</div><div class="l">BEST COMBO</div></div>
+        <div class="stat-mini"><div class="v" id="finalCorrect">0/15</div><div class="l">CORRECT</div></div>
+      </div>
+      <div class="badge-row" id="badgeRow"></div>
+    </div>
+    <button class="btn btn-primary mt" onclick="startChallenge()" type="button">🔁 Try Again</button>
+    <div class="nav-row"><button class="btn btn-ghost" onclick="goTo('welcome')" type="button">← Home</button></div>
+  </div>
+</section>
+
+<!-- CLASSROOM SETUP -->
+<section id="classroomSetup" class="screen setup-screen">
+  <div class="setup-decor"></div>
+  <div class="wrap setup-wrap">
+
+    <div class="setup-stage">
+      <div class="setup-top">
+        <span class="setup-eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="i18n" data-en="Classroom Mode" data-pt="Modo Sala de Aula">Classroom Mode</span>
+        </span>
+        <div class="lang-switch inline" data-lang="en" onclick="toggleLang(this)"><div class="lang-track"><div class="lang-thumb"></div><button class="lang-opt active" type="button">EN</button><button class="lang-opt" type="button">PT</button></div></div>
+      </div>
+
+      <h2 class="setup-title i18n" data-en="Pick your teams" data-pt="Escolha as equipes">Pick your teams</h2>
+      <p class="setup-sub i18n" data-en="Name the teams, hit start and let the class compete — one question at a time." data-pt="Dê nome às equipes, aperte iniciar e deixe a turma competir — uma pergunta de cada vez.">Name the teams, hit start and let the class compete — one question at a time.</p>
+
+      <div class="setup-chips">
+        <span class="setup-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><span class="i18n" data-en="10 shuffled questions" data-pt="10 perguntas aleatórias">10 shuffled questions</span></span>
+        <span class="setup-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="i18n" data-en="Live scoreboard" data-pt="Placar ao vivo">Live scoreboard</span></span>
+        <span class="setup-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span class="i18n" data-en="Projector-ready" data-pt="Pronto para o projetor">Projector-ready</span></span>
+      </div>
+
+      <div class="arena">
+        <div class="team-setup a">
+          <div class="team-emblem" aria-hidden="true">A</div>
+          <div class="team-setup-label i18n" data-en="TEAM A" data-pt="EQUIPE A">TEAM A</div>
+          <label class="name-field">
+            <span class="sr-only i18n" data-en="Team A name" data-pt="Nome da equipe A">Team A name</span>
+            <input class="setup-name-input" id="setupNameA" value="TEAM A" autocomplete="off" spellcheck="false" onfocus="this.select()" onkeydown="if(event.key==='Enter')startClassroom()">
+            <svg class="name-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </label>
+        </div>
+        <div class="arena-vs" aria-hidden="true">VS</div>
+        <div class="team-setup b">
+          <div class="team-emblem" aria-hidden="true">B</div>
+          <div class="team-setup-label i18n" data-en="TEAM B" data-pt="EQUIPE B">TEAM B</div>
+          <label class="name-field">
+            <span class="sr-only i18n" data-en="Team B name" data-pt="Nome da equipe B">Team B name</span>
+            <input class="setup-name-input" id="setupNameB" value="TEAM B" autocomplete="off" spellcheck="false" onfocus="this.select()" onkeydown="if(event.key==='Enter')startClassroom()">
+            <svg class="name-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </label>
+        </div>
+      </div>
+
+      <button class="setup-shuffle" type="button" onclick="shuffleTeamNames(this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.1" fill="currentColor"/><circle cx="16" cy="8" r="1.1" fill="currentColor"/><circle cx="12" cy="12" r="1.1" fill="currentColor"/><circle cx="8" cy="16" r="1.1" fill="currentColor"/><circle cx="16" cy="16" r="1.1" fill="currentColor"/></svg>
+        <span class="i18n" data-en="Random team names" data-pt="Nomes aleatórios">Random team names</span>
+      </button>
+    </div>
+
+    <div class="setup-keys">
+      <span class="setup-keys-title i18n" data-en="Teacher shortcuts" data-pt="Atalhos do professor">Teacher shortcuts</span>
+      <div class="key-list">
+        <span class="key-item"><kbd class="key">Space</kbd><span class="i18n" data-en="Reveal" data-pt="Revelar">Reveal</span></span>
+        <span class="key-item"><kbd class="key a">1</kbd><span class="i18n" data-en="Point A" data-pt="Ponto A">Point A</span></span>
+        <span class="key-item"><kbd class="key b">2</kbd><span class="i18n" data-en="Point B" data-pt="Ponto B">Point B</span></span>
+        <span class="key-item"><kbd class="key">0</kbd><span class="i18n" data-en="Nobody" data-pt="Ninguém">Nobody</span></span>
+        <span class="key-item"><kbd class="key">N</kbd><span class="i18n" data-en="Next" data-pt="Próxima">Next</span></span>
+        <span class="key-item"><kbd class="key">T</kbd><span class="i18n" data-en="Translate" data-pt="Traduzir">Translate</span></span>
+      </div>
+    </div>
+
+    <div class="setup-cta">
+      <button class="btn-start" onclick="startClassroom()" type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        <span class="i18n" data-en="Start Session" data-pt="Iniciar sessão">Start Session</span>
+      </button>
+      <button class="btn btn-ghost" onclick="goTo('welcome')" type="button"><span class="i18n" data-en="← Back" data-pt="← Voltar">← Back</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSROOM MAIN -->
+<section id="classroom" class="screen">
+  <div class="wrap">
+    <div class="round-progress"><div class="round-fill" id="roundFill"></div></div>
+    <div class="scoreboard">
+      <div class="team-card a" id="teamCardA">
+        <input class="team-name-input" id="nameA" value="TEAM A" onchange="renderClassroom()">
+        <div class="score" id="scoreA">0</div>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="team-card b" id="teamCardB">
+        <input class="team-name-input" id="nameB" value="TEAM B" onchange="renderClassroom()">
+        <div class="score" id="scoreB">0</div>
+      </div>
+    </div>
+    <div class="round-dots" id="roundDots"></div>
+    <div class="question-card classroom-question-card">
+      <div class="lang-switch" data-lang="en" onclick="toggleLang(this)"><div class="lang-track"><div class="lang-thumb"></div><button class="lang-opt active" type="button">EN</button><button class="lang-opt" type="button">PT</button></div></div>
+      <div class="q-progress">Question <span id="cqNum">1</span> / 10</div>
+      <div class="q-text" id="cqText"></div>
+      <div class="options-grid" id="cOptGrid"></div>
+      <div class="feedback-box" id="cFeedback" aria-live="polite"></div>
+    </div>
+    <div class="classroom-controls">
+      <button class="btn btn-ghost" id="revealBtn" onclick="revealClassroom()" type="button">👁 Reveal <span class="kbd">Space</span></button>
+      <button class="btn-team a" onclick="award('A')" type="button">Point A <span class="kbd">1</span></button>
+      <button class="btn-team b" onclick="award('B')" type="button">Point B <span class="kbd">2</span></button>
+      <button class="btn-team none" onclick="award(null)" type="button">Nobody <span class="kbd">0</span></button>
+      <button class="btn btn-ghost" onclick="undoAward()" type="button">↩ Undo <span class="kbd">U</span></button>
+      <button class="btn btn-primary" onclick="nextClassroom()" type="button">Next → <span class="kbd">N</span></button>
+    </div>
+    <div class="shortcuts-legend">
+      <span><b>Space/R</b> reveal</span><span><b>1</b> Team A</span><span><b>2</b> Team B</span><span><b>0</b> nobody</span><span><b>U</b> undo</span><span><b>N/→</b> next</span><span><b>T</b> translate</span>
+    </div>
+    <div class="nav-row"><button class="btn btn-ghost" onclick="goTo('welcome')" type="button">← End Session</button></div>
+  </div>
+</section>
+
+<!-- CLASSROOM WINNER -->
+<section id="classroomWinner" class="screen">
+  <div class="wrap center" style="padding-top:50px">
+    <div class="winner-box">
+      <div class="confetti" id="winnerConfetti"></div>
+      <div class="emoji" style="font-size:52px" id="winnerEmoji">🏆</div>
+      <h2 class="mt" id="winnerTitle">Team A wins!</h2>
+      <p style="color:var(--ink-500);margin-top:8px" id="winnerScore"></p>
+    </div>
+    <button class="btn btn-primary mt" onclick="goTo('classroomSetup')" type="button">🔁 Play Again</button>
+    <div class="nav-row"><button class="btn btn-ghost" onclick="goTo('welcome')" type="button">← Home</button></div>
+  </div>
+</section>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
